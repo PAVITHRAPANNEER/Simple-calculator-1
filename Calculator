@@ -1,0 +1,19 @@
+class Calculator:
+   def operation(self,a,b,c):
+       if(c=='+'):
+           print("The result is:",a+b)
+       elif(c=='-'):
+           print("The result is:",a-b)
+       elif(c=='*'):
+           print("The result is:",a*b)
+       elif(c=='//'):
+           print("The result is:",a//b)
+       elif(c=='%'):
+           print("The result is:",a%b)
+       else:
+           print("The result is:",a**b)
+obj=Calculator()
+a=int(input("Enter the first input:"))
+b=int(input("Enter the second input:"))
+c=input("Enter the operation:")
+obj.operation(a,b,c)
